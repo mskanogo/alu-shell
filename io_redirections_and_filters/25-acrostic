@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c1 | tr '[:lower:]' '[:upper:]'
+while read -r line; do printf '%s' "${line:0:1}"; done | tr '[:lower:]' '[:upper:]'; echo
