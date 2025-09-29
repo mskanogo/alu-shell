@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "Best School" > \*\\'"Best School"\'\\*$\?\*\*\*\*\*:)
+echo "Best School" > temp_content
+cat temp_content > "./\\*\\\\'\"Best School\"'\\*\$?\\*\\*\\*\\*\\*:)"
+rm temp_content
