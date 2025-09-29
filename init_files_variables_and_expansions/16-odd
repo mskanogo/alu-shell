@@ -1,2 +1,2 @@
 #!/bin/bash
-perl -ne 'print if /^(0-|[0-9]*[13579]-|README\.md$)/'
+i=0; while IFS= read -r line; do ((i++%2)) || echo "$line"; done
