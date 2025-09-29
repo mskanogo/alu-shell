@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" {a..z}{a..z}|while read l do if [ $l != oo ] then echo $l fi done
+for a in {a..z} do for b in {a..z} do if test $a$b != oo then echo $a$b fi done done
