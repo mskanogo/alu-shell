@@ -1,4 +1,2 @@
 #!/bin/bash
-echo "Best School" > temp_content
-cat temp_content > "./\\*\\\\'\"Best School\"'\\*\$?\\*\\*\\*\\*\\*:)"
-rm temp_content
+echo "Best School" > temp_file && mv temp_file $'\\*\\\\\'"Best School"\'\\*$?\\*\\*\\*\\*\\*:)'
