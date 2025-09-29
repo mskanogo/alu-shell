@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=8;(ibase=5;$(echo $WATER|tr 'water' 01234))+(ibase=4;$(echo $STIR|tr 'stir' 0123))"|bc|tr 01234567 bestchol
+perl -e '$W="water";$S="stir";$O="bestchol";$n1=0;$b=1;for(reverse split//,$ENV{WATER}){$n1+=index($W,$_)*$b;$b*=5}$n2=0;$b=1;for(reverse split//,$ENV{STIR}){$n2+=index($S,$_)*$b;$b*=4}$sum=$n1+$n2;$r="";do{$r=substr($O,$sum%8,1).$r;$sum=int($sum/8)}while($sum);print$r."\n"'
