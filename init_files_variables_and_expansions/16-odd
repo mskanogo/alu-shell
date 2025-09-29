@@ -1,2 +1,2 @@
 #!/bin/bash
-perl -ne 'print if /^0-|^[0-9]*[13579]-/'
+perl -ne 'print if /^(0-|[0-9]*[13579]-|README\.md$)/'
