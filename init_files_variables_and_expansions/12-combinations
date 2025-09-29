@@ -1,2 +1,2 @@
 #!/bin/bash
-for a in {a..z} do for b in {a..z} do [[ $a$b != oo ]]  echo $a$b done done
+printf %s\\n {a..n}{a..z} o{a..n} o{p..z} {p..z}{a..z}
